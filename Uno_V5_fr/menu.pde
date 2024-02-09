@@ -1,4 +1,4 @@
-class Kort {
+class Logo {
   int xPos;
   int wid;
   int yPos;
@@ -6,7 +6,7 @@ class Kort {
   PImage Unologo;
 
 
-  Kort(int xP, int w, int yP, int h) {
+  Logo(int xP, int w, int yP, int h) {
     Unologo = loadImage("UNO_Logo.png");
     xPos = xP;
     wid = w;
@@ -14,7 +14,7 @@ class Kort {
     heig = h;
   }
   
-  void tegnKort(){
+  void tegnLogo(){
    image(Unologo,xPos, wid, yPos, heig); 
     
   }

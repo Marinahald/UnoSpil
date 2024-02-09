@@ -27,39 +27,41 @@ class Button {
       fill(255, 255, 0);
       text("UNO", 850, 855);
     } else if (type == "cardDrawnByPlayer") {
+      fill(0);
       rect(xPos, yPos, xSize, ySize, 25);
       fill(255, 0, 0);
       ellipse(415, 500, 120, 150);
       fill(255, 255, 0);
       textSize(50);
       text("UNO", 365, 510);
-    } else if(bTxt == "changeColorRed" || bTxt == "changeColorBlue" || bTxt == "changeColorGreen" || bTxt == "changeColorYellow"){
-      switch(bTxt){
-        case "changeColorRed":
+    } else if (bTxt == "changeColorRed" || bTxt == "changeColorBlue" || bTxt == "changeColorGreen" || bTxt == "changeColorYellow") {
+      switch(bTxt) {
+      case "changeColorRed":
         fill(215, 38, 0);
         break;
-        
-        case "changeColorBlue":
+
+      case "changeColorBlue":
         fill(9, 86, 191);
         break;
-        
-        case "changeColorGreen":
+
+      case "changeColorGreen":
         fill(55, 151, 17);
         break;
-        
-        case "changeColorYellow":
+
+      case "changeColorYellow":
         fill(236, 212, 7);
         break;
       }
       rect(xPos, yPos, xSize, ySize);
-    
-  }else {
+    } else {
+      //knapper i menuen
       stroke(255, 255, 0);
       fill(255, 0, 0);
       rect(xPos, yPos, xSize, ySize);
       fill(255, 245, 0);
       textSize(30);
       text(bTxt, xPos+((xSize/2)-(textWidth(bTxt)/2)), yPos+((ySize/2)+5));
+
     }
   }
 

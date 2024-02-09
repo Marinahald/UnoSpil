@@ -10,7 +10,9 @@ Button chooseColorBlue;
 Button chooseColorGreen;
 Button chooseColorYellow;
 Deck d1;
-Kort k1;
+Logo l1;
+
+
 boolean unoHit;
 char menu;
 Player human;
@@ -43,7 +45,7 @@ void setup() {
   human = new Player();
   bot = new Player();
   players = new Player[]{human, bot};
-  k1 = new Kort(300, 80, 400, 400);
+  l1 = new Logo(300, 80, 400, 400);
 }
 
 
@@ -58,7 +60,7 @@ void draw() {
     textSize(100);
     text("UNO", 400, 100);
 
-b1.show();
+    b1.show();
     //kort
     rect(350, 400, 130, 200, 25);
     fill(255, 0, 0);
@@ -76,6 +78,8 @@ b1.show();
     stroke(0);
     fill(255);
     rect(550, 400, 130, 200, 25);
+
+
 
     //menuknap
     fill(160, 160, 160);
@@ -125,10 +129,7 @@ b1.show();
   case 'q':
     println("Quit");
     break;
-
-   
-    
-    case 'r':
+  case 'r':
     background(255);
     textSize(100);
     text("Rules", (width/2)-(textWidth("Rules")/2), 100);
@@ -140,12 +141,13 @@ b1.show();
     break;
   default:
 
+
     background(255);
     b2.show();
     b3.show();
     b4.show();
-    k1.tegnKort();
-    
+    l1.tegnLogo();
+
     break;
   }
 }
@@ -169,13 +171,12 @@ void mousePressed() {
     }
   }
   if (colorSwitch) {
-      chooseColorRed.press();
-      chooseColorBlue.press();
-      chooseColorGreen.press();
-      chooseColorYellow.press();
-    }
+    chooseColorRed.press();
+    chooseColorBlue.press();
+    chooseColorGreen.press();
+    chooseColorYellow.press();
+  }
 }
-
 
 void uno() {
   unoHit = true;
