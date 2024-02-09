@@ -152,6 +152,11 @@ b1.show();
 
 
 void mousePressed() {
+  b1.press();
+  b2.press();
+  b3.press();
+  b4.press();
+  d1.deckShuffle();
   if (players[playerTracker%2] == human) {
     unoHitB.press();
     drawCardB.press();
