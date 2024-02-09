@@ -1,4 +1,4 @@
-Button b1; //<>//
+Button b1; //<>// //<>//
 Button b2;
 Button b3;
 Button b4;
@@ -9,6 +9,7 @@ Button chooseColorRed;
 Button chooseColorBlue;
 Button chooseColorGreen;
 Button chooseColorYellow;
+Button unomenu;
 Deck d1;
 Kort k1;
 boolean unoHit;
@@ -33,6 +34,7 @@ void setup() {
   b3 = new Button(250, 500, 600, 60, "Rules", "rules" );
   b4 = new Button(250, 500, 700, 60, "Settings", "ind");
   unoHitB = new Button(815, 170, 600, 95, "UNO", "uno");
+  unomenu = new Button(90,100,80,80,"menu3","menu3");
   drawCardB = new Button(350, 130, 400, 200, "Draw", "cardDrawnByPlayer");
   chooseColorRed = new Button(300, 100, 300, 100, "", "changeColorRed");
   chooseColorBlue = new Button(400, 100, 300, 100, "", "changeColorBlue");
@@ -59,6 +61,7 @@ void draw() {
     text("UNO", 400, 100);
 
 b1.show();
+unomenu.show();
     //kort
     rect(350, 400, 130, 200, 25);
     fill(255, 0, 0);
@@ -78,12 +81,7 @@ b1.show();
     rect(550, 400, 130, 200, 25);
 
     //menuknap
-    fill(160, 160, 160);
-    rect(900, 100, 80, 80, 20);
-    fill(0);
-    rect(920, 120, 40, 5);
-    rect(920, 137.5, 40, 5);
-    rect(920, 155, 40, 5);
+    
 
 
     //gameplay
@@ -91,6 +89,12 @@ b1.show();
       unoHitB.show();
     }
     human.h1.displayCards();
+   /* 
+    if (players[playerTracker%2] == bot) 
+      {
+       bot.AI(); 
+      }
+    */
 
     for (Card c : playedCards) {
       int xPile = 550;

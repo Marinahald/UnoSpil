@@ -33,6 +33,13 @@ class Button {
       fill(255, 255, 0);
       textSize(50);
       text("UNO", 365, 510);
+    }else if (bTxt == "menu3"){
+        fill(160, 160, 160);
+    rect(900, 100, 80, 80, 20);
+    fill(0);
+    rect(920, 120, 40, 5);
+    rect(920, 137.5, 40, 5);
+    rect(920, 155, 40, 5);
     } else if(bTxt == "changeColorRed" || bTxt == "changeColorBlue" || bTxt == "changeColorGreen" || bTxt == "changeColorYellow"){
       switch(bTxt){
         case "changeColorRed":
