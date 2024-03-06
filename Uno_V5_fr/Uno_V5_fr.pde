@@ -2,6 +2,7 @@ Button b1; //<>//
 Button b2;
 Button b3;
 Button b4;
+Button b5;
 Button unoHitB;
 Button playB;
 Button drawCardB;
@@ -34,6 +35,7 @@ void setup() {
   b2 = new Button(250, 500, 500, 60, "New game", "play");
   b3 = new Button(250, 500, 600, 60, "Rules", "rules" );
   b4 = new Button(250, 500, 700, 60, "Settings", "ind");
+  b5 = new Button(900, 100, 80, 80, "", "mknap");
   unoHitB = new Button(815, 170, 600, 95, "UNO", "uno");
   drawCardB = new Button(350, 130, 400, 200, "Draw", "cardDrawnByPlayer");
   chooseColorRed = new Button(300, 100, 300, 100, "", "changeColorRed");
@@ -79,15 +81,7 @@ void draw() {
     fill(255);
     rect(550, 400, 130, 200, 25);
 
-
-
-    //menuknap
-    fill(160, 160, 160);
-    rect(900, 100, 80, 80, 20);
-    fill(0);
-    rect(920, 120, 40, 5);
-    rect(920, 137.5, 40, 5);
-    rect(920, 155, 40, 5);
+    b5.show();
 
 
     //gameplay
@@ -158,6 +152,7 @@ void mousePressed() {
   b2.press();
   b3.press();
   b4.press();
+  b5.press();
   d1.deckShuffle();
   if (players[playerTracker%2] == human) {
     unoHitB.press();
@@ -191,6 +186,9 @@ void rules() {
 }
 void ind() {
   menu = 'i';
+}
+void mknap() {
+  menu = 'm';
 }
 
 void cardDrawnByPlayer() {

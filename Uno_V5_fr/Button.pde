@@ -53,6 +53,14 @@ class Button {
         break;
       }
       rect(xPos, yPos, xSize, ySize);
+    } else if (type == "mknap") {
+      //menuknap
+      fill(160, 160, 160);
+      rect(900, 100, 80, 80, 20);
+      fill(0);
+      rect(920, 120, 40, 5);
+      rect(920, 137.5, 40, 5);
+      rect(920, 155, 40, 5);
     } else {
       //knapper i menuen
       stroke(255, 255, 0);
@@ -61,7 +69,7 @@ class Button {
       fill(255, 245, 0);
       textSize(30);
       text(bTxt, xPos+((xSize/2)-(textWidth(bTxt)/2)), yPos+((ySize/2)+5));
-
+      fill(160, 160, 160);
     }
   }
 
