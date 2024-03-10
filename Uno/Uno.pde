@@ -142,6 +142,26 @@ void draw() {
     textSize(100);
     text("Rules", (width/2)-(textWidth("Rules")/2), 100);
     b5.show();
+     textSize(100);
+    text("Rules", (width/2)-(textWidth("Rules")/2), 100);
+    textSize(25);
+    text("Setup:",0,170);
+    text("Every player starts with seven cards. The rest of the cards are placed in a Draw Pile face down.",0,200); 
+    text("Next to the pile a space should be designated for a Discard Pile.",0,230);
+    text("The top card is placed in the Discard Pile, and the game begins!",0,260);
+    text("Gameplay",0,300);
+    text("The first player tries to match the card in the Discard Pile. You have to match either by the",0,330);
+    text("number, color, or the symbol/Action. If the player has no matches they must draw a card from the",0,360);
+    text("Draw Pile. If that card can be played, play it and the game moves on to the next person",0,390);
+    text("The game continues until a player has one card left. They must then press the UNO-button",0,420);
+    text("The game stops when a player has 0 cards left. They have now won UNO!!!!",0,450);
+    text("Special Cards",0,490);
+    text("Reverse – If going clockwise, switch to counterclockwise or vice versa.",0,520);
+    text("Skip – When a player places this card, the next player has to skip their turn.",0,550);
+    text("Draw Two – The next player will have to pick up two cards and forfeit his/her turn.",0,580);
+    text("Color - Can be played on any card. Shifts to any color the player like",0,610);
+    text("Draw Four - Changes color and the next player must draw four cards",0,640);
+    
     break;
   case 'i':
     background(255);
