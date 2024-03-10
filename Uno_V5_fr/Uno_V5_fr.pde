@@ -125,8 +125,19 @@ void draw() {
     break;
   case 'r':
     background(255);
+    fill(0);
     textSize(100);
     text("Rules", (width/2)-(textWidth("Rules")/2), 100);
+    textSize(25);
+    text("Setup:",0,170);
+    text("Every player starts with seven cards. The rest of the cards are placed in a Draw Pile face down.",0,200); 
+    text("Next to the pile a space should be designated for a Discard Pile.",0,230);
+    text("The top card is placed in the Discard Pile, and the game begins!",0,260);
+    text("Gameplay",0,300);
+    text("The first player tries to match the card in the Discard Pile. You have to match either by the",0,330);
+    text("number, color, or the symbol/Action. If the player has no matches they must draw a card from the",0,360);
+    text("Draw Pile. If that card can be played, play it and the game moves on to the next person",0,390);
+    
     break;
   case 'i':
     background(255);
