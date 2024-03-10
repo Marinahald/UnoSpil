@@ -15,7 +15,7 @@ class Deck{
         if(x>=1&&cT==0){
           println("");
         } else{
-          Card card = new Card(cCol, cT/*,0,0*/);
+          Card card = new Card(cCol, cT);
         deck.add(card);
         }
       }

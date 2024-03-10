@@ -7,11 +7,10 @@ class Card {
   int yPos;
   String cardSymbol;
 
-  Card(String cC, int t/*,int x,int y*/) {
+  Card(String cC, int t) {
     cColor = cC;
     type = t;
-    /*xPos = x;
-     yPos = y;*/
+    
     switch(this.type) {
     case 69:
       //switch direction
